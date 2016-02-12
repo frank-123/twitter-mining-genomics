@@ -1,0 +1,211 @@
+/* Start with the basics*/
+
+/* reset: selector for all elements  */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+h1,h2,h3,p {
+	padding: 5px 5px 5px 20px;
+	line-height: 22px;
+	margin-top: 10px;
+
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+#header {
+	float: left;
+	background: #e1e8ed; /* official Twitter lightgrey */
+	margin: 10px 0 0 0; /* top right bottom left*/ 
+	width: 100%;
+	height: 180px; 
+	border: 2px solid #55acee; /* official Twitter blue*/ 
+	border-radius: 6px;
+}
+#logo {
+	background: url('Twitter_bird_logo_2012.svg.png') no-repeat;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 35px 10px 10px 10px;
+	background-size:100%;
+}
+
+
+/* The following code is for the menus */
+#menu {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size:14px;
+/*  position:absolute; */ 
+  float: left;
+  margin: 0px 0 0 0px;
+}
+
+#menu ul {
+  list-style-type:none;
+  list-style-image:none;
+  margin:0px;
+  padding:0px;
+}
+
+#menu li.topmenu {
+  float:left;
+  padding: 0px;
+}
+
+.topmenu a {
+  float:left;
+  width:110px;
+  margin:10px;
+  padding: 10px;
+  text-align:center;
+}
+
+.topmenu ul{
+  display:none;
+}
+
+.topmenu a, .submenu a{
+  padding:10px 15px;
+  border-right:1px solid #fff;
+  border-collapse:collapse;
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+  background-color:#55acee;
+  margin:0px;  
+}
+
+.submenu a{
+  font-size:12px;
+  width:110px;
+  position:relative;
+  clear:both; /* special IE6 */
+}
+
+#menu a:hover, .topmenu.on a {
+  color:#fff;
+  background-color:#666 !important;
+}
+
+.topmenu:hover ul {
+  display:block;  
+  z-index:500;
+}
+
+/* CCS for all the other stuff
+ from the Webdesign Magazin page 58-73 */
+
+#main_content {
+	float: right;
+	background: #e1e8ed;
+	margin: 10px 0px 10px 0;
+	width: 320px;
+/*	height: 100%; */
+	height: 630px; 
+	border-radius: 6px; /* abgerundete Ecken */
+}
+#main_content p,h2 {
+	line-height: 22px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+
+/* CCS of DIV for list of (disease, gene) tags */
+#all_tags {
+	width: 300px;
+	max-height: 455px;
+	overflow-y: auto; /* show vertical scrollbar if needed*/
+}
+
+
+#sidebar,#sidebar2 {
+	float: left;
+	margin: 10px 10px 10px 0px;
+	background: #e1e8ed;
+	width: 310px;
+	height: 630px;
+	border-radius: 6px; /* abgerundete Ecken */
+	cursor: pointer;
+
+}
+#sidebar h3 {
+	padding-left: 20px;
+	color: #333;
+}
+.sidebar_list, #all_tags {
+	margin: 0px 10px 0px 10px;
+}
+.sidebar_list li {
+	list-style: none;
+	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #ddd;
+}
+.sidebar_list li a {
+	text-decoration: none;
+	color: #333;
+	font-size: 13px;
+}
+
+#search_form {
+	margin: 10px 0 50px 20px;
+}
+#search_form input {
+	padding: 5px;
+}
+.thumb {
+	float:left;
+	margin: 22px;
+	border: 1px solid #fff;
+	box-shadow: 0px 4px 6px #999;
+}
+img.rightpic {
+	float:right;
+	height: 100px;
+	width: auto;
+	margin: 5px 5px 5px 5px;
+	border-width: 2px;
+	border-color: black;
+	box-shadow: 10px 10px 5px #808080;
+}
+
+#footer {
+	clear:both; /* bis hierhin aktive float Positionierung wird bendet*/
+	background:  #ddd;
+	width: 100%;
+	height: 90px;
+	border-radius: 6px; /* abgerundete Ecken */
+
+}	
+.about_us p {
+	float:left;
+	width: 600px;
+	padding: 20px;
+}
+/* .about_us p,h4 {
+	float:left;
+	width: 250px;
+} */
+.copyright p{
+	float:right;
+	width:150px;
+	padding: 20px;
+}
+
+/* CSS for D3 example */
+.axis path,
+.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
